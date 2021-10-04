@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { NgModule } from '@angular/core';
 import components from './components';
 import directives from './directives';

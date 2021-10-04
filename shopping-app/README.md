@@ -26,6 +26,8 @@ If your Android Studio path is not 'C:\Program Files\Android\Android Studio' whi
 
 If you get any error messages suggesting the project cannot be opened with your current Android Studio version, make sure to update Android Studio to the lastest version.
 
+If your gradle sync fails with the error message 'android/capacitor-cordova-android-plugins/cordova.variables.gradle' as it does not exist.', it is because the 'capacitor-cordova-android-plugins' folder was not generated. You will get this error message if you clone the git repository and try to open the android project without typing the command `ionic cap sync`. This will re-generate the required folder and the gradle sync error will be fixed.
+
 #### Live Reload
 
 `ionic cap run android -l --external` `ionic cap run ios -l --external`

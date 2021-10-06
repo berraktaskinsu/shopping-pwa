@@ -1,7 +1,7 @@
 # Shopping App
 
 # Project Setup (Angular & Ionic & Capacitor) (+ Tailwind CSS & Material Design)
-\\
+\
 Follow the below steps or [this](https://ionicframework.com/docs/angular/your-first-app) tutorial to create your project.
 
 ## Mac OS Environment Setup

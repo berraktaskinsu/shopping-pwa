@@ -58,11 +58,12 @@ npm ERR! If you believe this might be a permissions issue, please double-check t
 npm ERR! permissions of the file and its containing directories, or try running  
 npm ERR! the command again as root/Administrator (though this is not recommended).  
 > If so, type the following commands on your terminal:
-```
-sudo chown -R $USER ~/.npm  
-sudo chown -R $USER /usr/lib/node_modules  
-sudo chown -R $USER /usr/local/lib/node_modules   
-```
+> ```lang-js
+> sudo chown -R $USER ~/.npm  
+> sudo chown -R $USER /usr/lib/node_modules  
+> sudo chown -R $USER /usr/local/lib/node_modules   
+> ```
+
 
 ## Deploying to Mobile
 

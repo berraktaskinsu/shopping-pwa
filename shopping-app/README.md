@@ -28,7 +28,7 @@ You may use either your browser or your terminal to install Node. If you wish to
 
 Type the following command to your terminal: `brew install node`.
 
-> **_NOTE_**: A Problem You May Face if You Are Using an Unsupported Mac OS Version.  
+> **_A Problem You May Face if You Are Using an Unsupported Mac OS Version._**  
 >   
 > If your Mac OS version is not supported (<= 10.13 - High Sierra) by Apple/Homebrew, and if gcc is not installed already, then the above node installation command may fail while brew automatically tries to install gcc, which is a node dependency. This happens because 'gcc' in turn, depends on the 'isl' library, whose site has been down for a while. If this is the case for you, then you will get the error message "" while trying to download 'isl' via `brew install isl`. The message simply states that your Mac could not connect to the isl download page, and therefore, you need an isl mirror instead. [This] webpage is a good source for 'isl' mirrors.  
 >   

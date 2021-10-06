@@ -1,7 +1,7 @@
 # Shopping App
 
 # Project Setup (Angular & Ionic & Capacitor) (+ Tailwind CSS & Material Design)
-
+\\
 Follow the below steps or [this](https://ionicframework.com/docs/angular/your-first-app) tutorial to create your project.
 
 ## Mac OS Environment Setup
@@ -16,7 +16,7 @@ You may download XCode and XCode Command Line Developer Tools from Mac App Store
 
 If you haven't already installed Homebrew, you may do so by following [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-homebrew-on-macos) tutorial. You can check weather or not you have Homebrew on your Mac OS by typing the command `brew -v`. This will give you the Homebrew version currently installed, if it is installed.
 
-** Note: Do NOT install using the command `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`. See [here](https://stackoverflow.com/questions/20381128/installing-homebrew-on-os-x) the reason why
+**_Note_**: Do NOT install using the command `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`. See [here](https://stackoverflow.com/questions/20381128/installing-homebrew-on-os-x) the reason why
 
 * If you wish to update Homebrew, you may type `brew update`.
 

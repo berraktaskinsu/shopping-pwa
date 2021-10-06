@@ -18,6 +18,7 @@ In order to build and run our code on Mac OS, we will need XCode, XCode Command 
 You may download XCode and XCode Command Line Developer Tools from Mac App Store, if the latest XCode version supports your OS. If not, you can download the previous versions [here](https://developer.apple.com/download/all/?q=xcode). The latest supported XCode version for Mac OS 10.13 - High Sierra is XCode 10.1.
 
 
+
 ### 2) Homebrew - The missing package manager for Mac OS
 
 If you haven't already installed Homebrew, you may do so by following [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-homebrew-on-macos) tutorial. You can check weather or not you have Homebrew on your Mac OS by typing the command `brew -v`. This will give you the Homebrew version currently installed, if it is installed.
@@ -29,11 +30,13 @@ If you haven't already installed Homebrew, you may do so by following [this](htt
 * Similarly, if you wish to update the packages maintained by Homebrew, you may do so by typing `brew upgrade package-name` or you may update all packages by typing `brew upgrade`.
 
 
+
 ### 3) Node.js
 
 You may use either your browser or your terminal to install Node. If you wish to proceed with the former, [here](https://nodejs.org/en/download/) is a link to the official website of Node. In this tutorial, I will install Node using the Mac OS terminal.
 
 Type the following command to your terminal: `brew install node`.
+
 
 
 
@@ -44,6 +47,7 @@ Type the following command to your terminal: `brew install node`.
 > In order to intall the mirror, we will need the mirror url, which in my case was 'http://ftp.linux.org.tr/slackware/slackware64-current/source/l/isl/isl-0.24.tar.xz'. After obtaining the mirror source, we will need to modify the existing isl formula of homebrew, by typing `brew edit isl` on the terminal. This command will open the isl formula file on vim by default (or whatever text editor you have configured your EDITOR environment variable path to point to). Then, we simply change the existing url with the valid one, which is the mirror url we obtained previously. Then we simply save and close the file. If you use vim, to save and exit the file, you can enter `esc` and type in `:wq` (Note that 'w' is to save the changes to the file and 'q' is to exit vim, so you may drop the changes by typing `:q` if you change your mind.).  
 >   
 > Voilla! We now, have configured our 'isl' formula to point to the mirror source we found. Now, `brew install node` will no longer give errors, and neither will `brew install gcc` or `brew install isl`, if you want to proceed step-by-step. Just to be clear, 'node' depends on 'gcc' which in turn depends on 'isl'.
+
 
 
 > **_You may get the following error when installing packages with node:_**  
@@ -75,6 +79,7 @@ npm ERR! the command again as root/Administrator (though this is not recommended
 > sudo chown -R $USER /usr/lib/node_modules  
 > sudo chown -R $USER /usr/local/lib/node_modules   
 > ```
+
 
 
 ## Deploying to Mobile

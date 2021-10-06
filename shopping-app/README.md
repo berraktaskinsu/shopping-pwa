@@ -1,8 +1,7 @@
 # Shopping App
 
 # Project Setup (Angular & Ionic & Capacitor) (+ Tailwind CSS & Material Design)
-\
-\ \
+
 Follow the below steps or [this](https://ionicframework.com/docs/angular/your-first-app) tutorial to create your project.
 
 ## Mac OS Environment Setup
@@ -66,6 +65,22 @@ npm ERR! the command again as root/Administrator (though this is not recommended
 > sudo chown -R $USER /usr/lib/node_modules  
 > sudo chown -R $USER /usr/local/lib/node_modules   
 > ```
+
+We will need to install cocoapods to be able to run `ionic cap sync`: CocoaPods is not installed. 
+
+Type `brew install cocoapods` to install cocoapods.
+
+We will need to install ruby if we get the below error while installing cocoapods.
+
+```
+ERROR:  Error installing rails:
+    zeitwerk requires Ruby version >= 2.4.4.
+```
+
+Install via https://gorails.com/setup/osx/10.13-high-sierra.
+
+> When installing ruby, ... 
+> https://stackoverflow.com/questions/68957915/macos-10-12-brew-install-openssl-issue
 
 ## Deploying to Mobile
 

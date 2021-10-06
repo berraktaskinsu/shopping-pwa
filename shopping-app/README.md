@@ -1,3 +1,12 @@
+// resets
+s { text-decoration:none; } //strike-through
+em { font-style: normal; font-weight: bold; } //italic emphasis
+
+
+// colors
+s { color: green }
+em { color: blue }
+
 # Shopping App
 
 # Project Setup (Angular & Ionic & Capacitor) (+ Tailwind CSS & Material Design)

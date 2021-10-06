@@ -20,9 +20,11 @@ Follow the below steps or [this](https://ionicframework.com/docs/angular/your-fi
 
 In order to build and run our code on Mac OS, we will need XCode, XCode Command Line Developer Tools, and Node.js istalled on our computer. We will also need Homebrew, which is a package manager for Mac OS, and will help us install necessary packages.
 
-If you haven't already installed Homebrew, then follow the below steps. You can check weather or not you have Homebrew on your Mac OS by typing the command `brew -v`. This will also give you the Homebrew version currently installed, if so. 
+If you haven't already installed Homebrew, you may do so by following [this]() tutorial.
 
-* 
+Note: Do NOT install using the command ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install). See here the reaon why. 
+
+You can check weather or not you have Homebrew on your Mac OS by typing the command `brew -v`. This will also give you the Homebrew version currently installed, if so.
 
 If you wish to update Homebrew, you may type `brew update`. Similarly, if you wish to update the packages maintained by Homebrew, you may do so by typing `brew upgrade package-name` or you may update all packages by typing `brew upgrade`.
 

@@ -7,20 +7,20 @@
 Follow the below steps or [this](https://ionicframework.com/docs/angular/your-first-app) tutorial to create your project.
 
 
-## Mac OS Environment Setup
-
-
+## Mac OS Environment Setup  
+  
+  
 In order to build and run our code on Mac OS, we will need XCode, XCode Command Line Tools, and Node.js istalled on our computer. We will also need Homebrew, which is a package manager for Mac OS, and will help us install necessary packages.
-
-
-### 1) XCode & XCode Command Line Tools
-
+  
+  
+### 1) XCode & XCode Command Line Tools  
+  
 You may download XCode and XCode Command Line Developer Tools from Mac App Store, if the latest XCode version supports your OS. If not, you can download the previous versions [here](https://developer.apple.com/download/all/?q=xcode). The latest supported XCode version for Mac OS 10.13 - High Sierra is XCode 10.1.
-
-
-
-### 2) Homebrew - The missing package manager for Mac OS
-
+  
+  
+  
+### 2) Homebrew - The missing package manager for Mac OS  
+  
 If you haven't already installed Homebrew, you may do so by following [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-homebrew-on-macos) tutorial. You can check weather or not you have Homebrew on your Mac OS by typing the command `brew -v`. This will give you the Homebrew version currently installed, if it is installed.
 
 ** Note: Do NOT install using the command `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`. See [here](https://stackoverflow.com/questions/20381128/installing-homebrew-on-os-x) the reason why. 
@@ -28,11 +28,11 @@ If you haven't already installed Homebrew, you may do so by following [this](htt
 * If you wish to update Homebrew, you may type `brew update`. 
 
 * Similarly, if you wish to update the packages maintained by Homebrew, you may do so by typing `brew upgrade package-name` or you may update all packages by typing `brew upgrade`.
-
-
-
+  
+  
+  
 ### 3) Node.js
-
+  
 You may use either your browser or your terminal to install Node. If you wish to proceed with the former, [here](https://nodejs.org/en/download/) is a link to the official website of Node. In this tutorial, I will install Node using the Mac OS terminal.
 
 Type the following command to your terminal: `brew install node`.

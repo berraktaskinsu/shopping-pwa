@@ -16,11 +16,9 @@ You may download XCode and XCode Command Line Developer Tools from Mac App Store
 
 #### 2) Homebrew - The missing package manager for Mac OS
 
-If you haven't already installed Homebrew, you may do so by following [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-homebrew-on-macos) tutorial.
+If you haven't already installed Homebrew, you may do so by following [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-homebrew-on-macos) tutorial. You can check weather or not you have Homebrew on your Mac OS by typing the command `brew -v`. This will give you the Homebrew version currently installed, if it is installed.
 
-** Note: Do NOT install using the command `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`. See [here](https://stackoverflow.com/questions/20381128/installing-homebrew-on-os-x) the reaon why. 
-
-You can check weather or not you have Homebrew on your Mac OS by typing the command `brew -v`. This will give you the Homebrew version currently installed, if so.
+** Note: Do NOT install using the command `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`. See [here](https://stackoverflow.com/questions/20381128/installing-homebrew-on-os-x) the reason why. 
 
 * If you wish to update Homebrew, you may type `brew update`. 
 
@@ -32,11 +30,11 @@ You may use either your browser or your terminal to install Node. If you wish to
 
 Type the following command to your terminal: `brew install node`.
 
-##### Possible Problems You May Face
+##### A Problem You May Face if You Are Using an Unsupported Mac OS Version.
 
 If your Mac OS version is not supported (<= 10.13 - High Sierra) by Apple/Homebrew, and if gcc is not installed already, then the above node installation command may fail while brew automatically tries to install gcc, which is a node dependency. This happens because 'gcc' in turn, depends on the 'isl' library, whose site has been down for a while. If this is the case for you, then you will get the error message "" while trying to download 'isl' via `brew install isl`. The message simply states that your Mac could not connect to the isl download page, and therefore, you need an isl mirror instead. [This] webpage is a good source for 'isl' mirrors.
 
-In order to intall the mirror, we will need the mirror url, which in my case was 'http://ftp.linux.org.tr/slackware/slackware64-current/source/l/isl/isl-0.24.tar.xz'. After obtaining the mirror source, we will need to modify the existing isl formula of homebrew, by typing `brew edit isl` on the terminal. This command will open the isl formula file on vim by default (or whatever text editor you have configured your EDITOR environment variable path to point to). Then, we simply change the existing url with the valid one, which is the mirror url we obtained previously. Then we simply save the file. If you use vim, to save and exit the file, you can enter `esc` and type in `:wq` (Note that 'w' is to save the changes to the file and 'q' is to exit vim, so you may drop the changes by typing `:q` if you change your mind.).
+In order to intall the mirror, we will need the mirror url, which in my case was 'http://ftp.linux.org.tr/slackware/slackware64-current/source/l/isl/isl-0.24.tar.xz'. After obtaining the mirror source, we will need to modify the existing isl formula of homebrew, by typing `brew edit isl` on the terminal. This command will open the isl formula file on vim by default (or whatever text editor you have configured your EDITOR environment variable path to point to). Then, we simply change the existing url with the valid one, which is the mirror url we obtained previously. Then we simply save and close the file. If you use vim, to save and exit the file, you can enter `esc` and type in `:wq` (Note that 'w' is to save the changes to the file and 'q' is to exit vim, so you may drop the changes by typing `:q` if you change your mind.).
 
 Voilla! We now, have configured our 'isl' formula to point to the mirror source we found. Now, `brew install node` will no longer give errors, and neither will `brew install gcc` or `brew install isl`, if you want to proceed step-by-step. Just to be clear, 'node' depends on 'gcc' which in turn depends on 'isl'.
 

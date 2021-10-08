@@ -113,6 +113,19 @@ If your gradle sync fails with the error message 'android/capacitor-cordova-andr
 
 # External Libraries
 
+## Typescript
+
+Follow [this](https://www.pullrequest.com/blog/intro-to-using-typescript-in-a-nodejs-express-project/) tutorial or the steps below to configure typescript in your Express-Node project.
+
+**STEP 1**: We will install dev dependencies to use typescript by typing the command:  
+```npm install typescript ts-node @types/node @types/express --save-dev```
+
+**STEP 2**:
+**STEP 3**:
+
+
+## ESLint
+
 ## Tailwind CSS
 
 Follow the below steps, or alternatively these two ([Tutorial 1](https://www.angularjswiki.com/angular/angular-tailwind-css/#step-2-install-tailwindcss-via-npm-or-yarn) & [Tutorial 2](https://dev.to/angular/setup-tailwindcss-in-angular-the-easy-way-1i5l)) tutorials to configure Tailwind CSS to your project.

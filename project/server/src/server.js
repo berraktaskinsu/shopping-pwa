@@ -12,15 +12,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('', routes);
 
-mongoose.connect(dbConfig.url, {
+mongoose
+  .connect(dbConfig.url, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => {
-    console.log("Successfully connected to the database");
-}).catch(err => {
+    useUnifiedTopology: true
+  })
+  .then(() => {
+    console.log('Successfully connected to the database');
+  })
+  .catch(err => {
     console.log('Could not connect to the database. Exiting now...', err);
     process.exit();
-});
+  });
 
 const port = process.env.PORT || '8000';
 app.set('port', port);
@@ -28,5 +31,5 @@ app.set('port', port);
 const server = http.createServer(app);
 
 server.listen(port, function () {
-    console.info(`Server is up and running on port ${port}`)
+  console.info(`Server is up and running on port ${port}`);
 });

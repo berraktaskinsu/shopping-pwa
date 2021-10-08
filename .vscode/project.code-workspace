@@ -1,0 +1,21 @@
+{
+    "folders": [
+      {
+        "name": "ROOT",
+        "path": "../"
+      },
+      {
+        "name": "project/server",
+        "path": "../project/server"
+      },
+      {
+        "name": "project/shopping-app",
+        "path": "../project/shopping-app"
+      },
+    ],
+    "settings": {
+        "files.exclude": {
+          "project/": true
+        },
+      }
+  }

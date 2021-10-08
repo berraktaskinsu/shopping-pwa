@@ -128,6 +128,29 @@ npx tsc --init
 ```
 You may change the typescript setup via modifying this file. The mentioned tutorial is a helpful guide for doing so.
 
+**_USAGE_**: TypeScript is compiled to JavaScript. That is why we only installed the required dependencies for development-use only. In order to compile TypeScript code, we need to run the following command before everytime we build the project.  
+```
+npx tsc --project ./
+```
+
+**_OPTIONAL_**: To avoid typing this command everytime we build the project, we may simply create and add a build script as follows:  
+```
+{
+  ...
+  "scripts": {
+    ...
+    "build": "npx tsc --project ./", // ADD THIS LINE
+    ...
+  },
+  ...
+}
+```  
+Now you may run the following command before you build your project.
+>
+```
+npm build
+```
+
 ## ESLint
 
 ## Tailwind CSS

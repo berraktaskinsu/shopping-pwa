@@ -122,9 +122,11 @@ Follow [this](https://www.pullrequest.com/blog/intro-to-using-typescript-in-a-no
 npm install typescript ts-node @types/node @types/express --save-dev
 ```
 
-**STEP 2**:
-**STEP 3**:
-
+**STEP 2**: Next, let us type the following command to create the `tsconfig.js` file.  
+```
+npx tsc --init
+```
+You may change the typescript setup via modifying this file. The mentioned tutorial is a helpful guide for doing so.
 
 ## ESLint
 

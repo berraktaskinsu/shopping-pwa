@@ -5,17 +5,17 @@
         "path": "../"
       },
       {
-        "name": "project/server",
-        "path": "../project/server"
+        "name": "packages/server",
+        "path": "../packages/server"
       },
       {
-        "name": "project/shopping-app",
-        "path": "../project/shopping-app"
+        "name": "packages/shopping-app",
+        "path": "../packages/shopping-app"
       },
     ],
     "settings": {
         "files.exclude": {
-          "project/": true
+          "packages/": true
         },
       }
   }

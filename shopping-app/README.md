@@ -145,13 +145,24 @@ npx tsc --project ./
   ...
 }
 ```  
-Now you may run the following command before you build your project.
->
+Now you may run the following command instead, before you build your project.
 ```
 npm build
 ```
 
 ## ESLint
+
+Follow [this](https://www.section.io/engineering-education/node-eslint/) tutorial or the steps below to configure ESLint in your Express-Node project.
+
+**STEP 1**: We will install eslint as a dev-dependency by typing the command: 
+```
+npm i --save-dev eslint
+```
+
+**STEP 2**: Next, we will run eslint to initialize the `eslintrc.json` file. This will guide us to configure ur eslint settings. It will also install some preffered dependencies.  
+```
+npx eslint --init
+```
 
 ## Tailwind CSS
 

@@ -1,5 +1,7 @@
 # Server-Side Programming - Backend API + Database
 
+Initial Mean Stack: https://dev.to/felberto/initial-project-setup-of-a-mean-stack-p89
+
 Server-Side Programming: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
 
 Mongoose: https://github.com/Automattic/mongoose

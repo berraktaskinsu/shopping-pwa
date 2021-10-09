@@ -6,9 +6,6 @@ import routes = require('./routes/index.route');
 
 const app = express();
 
-
-
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -35,7 +32,3 @@ const server = http.createServer(app);
 server.listen(port, function () {
   console.info(`Server is up and running on port ${port}`);
 });
-
-
-
-

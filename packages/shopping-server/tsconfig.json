@@ -1,14 +1,16 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "./dist",
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "sourceMap": true,
     "strict": true,
     "target": "es6"
   },
-  "include": ["src/**/*.ts"]
+  "lib": ["es2015"],
+  "include": ["src/**/*.ts", "src/config/database.config.cts"]
 }

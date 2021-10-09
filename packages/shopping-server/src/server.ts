@@ -1,34 +1,35 @@
-import express = require('express');
-import http = require('http');
-import mongoose = require('mongoose');
-import dbConfig = require('./config/database.config');
-import routes = require('./routes/index.route');
+import express from 'express';
+import http from 'http';
+import mongoose from 'mongoose';
+
+import dbConfig from './database/database.config';
+import { router as routes } from './routes/index.route';
+
+import { Book } from './database/models';
 
 const app = express();
+const apiRoot = '';
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('', routes);
+app.use(apiRoot, routes);
 
-mongoose
-  .connect(dbConfig.url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(() => {
-    console.log('Successfully connected to the database');
-  })
-  .catch(err => {
-    console.log('Could not connect to the database. Exiting now...', err);
-    process.exit();
-  });
+mongoose.connect(dbConfig);
+const db = mongoose.connection;
 
-const port = process.env.PORT || '8000';
+db.on('error', (err: Error) => {
+  console.error(err);
+});
+
+db.on('connected', () => {
+  console.info(`Successfully connected to mongodb`);
+});
+
+const port = process.env.PORT || 8080;
 app.set('port', port);
 
 const server = http.createServer(app);
-
-server.listen(port, function () {
+server.listen(port, () => {
   console.info(`Server is up and running on port ${port}`);
 });

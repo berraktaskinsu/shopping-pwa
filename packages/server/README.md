@@ -71,3 +71,6 @@ npm i --save-dev eslint
 ```
 npx eslint --init
 ```
+
+**_NOTE_**: https://eslint.org/docs/user-guide/configuring/configuration-files for detailed documentation of fields to include in tsconfig.json.
+

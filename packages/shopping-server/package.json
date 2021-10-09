@@ -1,19 +1,18 @@
 {
-  "name": "server",
+  "name": "shopping-server",
   "version": "1.0.0",
   "description": "An Express server",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "build": "npx tsc --project ./",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "build": "tsc",
+    "server": "nodemon server.js",
+    "lint": "eslint src/**/*.ts"
   },
   "author": "Berrak Taşkınsu",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^6.0.8",
+    "mongoose": "^6.0.10",
     "nodemon": "^2.0.13"
   },
   "devDependencies": {
@@ -22,8 +21,9 @@
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   }

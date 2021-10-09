@@ -1,15 +1,6 @@
 {
-  "css.validate": false,
   "editor.formatOnSave": true,
   "git.autofetch": true,
-  "html.format.endWithNewline": true,
-  "html.format.indentInnerHtml": true,
-  "html.format.wrapAttributes": "force-expand-multiline",
-  "less.validate": false,
-  "scss.validate": false,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -22,5 +13,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+"editor.defaultFormatter": "esbenp.prettier-vscode"
 }
+
+

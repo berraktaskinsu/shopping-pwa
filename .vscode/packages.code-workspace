@@ -1,21 +1,26 @@
 {
-    "folders": [
-      {
-        "name": "ROOT",
-        "path": "../"
-      },
-      {
-        "name": "packages/server",
-        "path": "../packages/server"
-      },
-      {
-        "name": "packages/shopping-app",
-        "path": "../packages/shopping-app"
-      },
-    ],
-    "settings": {
-        "files.exclude": {
-          "packages": true
-        },
-    }
-  }
+	"folders": [
+		{
+			"name": "ROOT",
+			"path": "../"
+		},
+		{
+			"name": "packages/server",
+			"path": "../packages/server"
+		},
+		{
+			"name": "packages/shopping-app",
+			"path": "../packages/shopping-app"
+		},
+		{
+			"name": "packages/shopping-server",
+			"path": "../packages/shopping-server"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"packages": true,
+			"packages/": true
+		}
+	}
+}

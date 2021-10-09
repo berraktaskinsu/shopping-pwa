@@ -54,6 +54,8 @@ Now you may run the following command instead, before you build your project.
 npm build
 ```
 
+**_NOTE_**: https://www.typescriptlang.org/tsconfig#someField for detailed documentation of fields to include in tsconfig.json.
+
 ## ESLint
 
 Follow [this](https://www.section.io/engineering-education/node-eslint/) tutorial or the steps below to configure ESLint in your Express-Node project.

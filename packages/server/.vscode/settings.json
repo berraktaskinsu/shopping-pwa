@@ -23,5 +23,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.prettierPath": "packages\\shopping-app\\.prettierrc.js"
+  "prettier.prettierPath": "packages\\server\\.prettierrc.js"
 }

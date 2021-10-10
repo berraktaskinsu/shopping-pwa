@@ -10,6 +10,8 @@ MEAN Stack Deployment on Ubuntu Server on AWS EC2: https://jasonwatmore.com/post
 
 AWS EC2 Linux: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console
 
+Cache Headers: https://regbrain.com/article/cache-headers-express-js
+
 ## Typescript
 
 Follow [this](https://www.pullrequest.com/blog/intro-to-using-typescript-in-a-nodejs-express-project/) tutorial or the steps below to configure typescript in your Express-Node project.

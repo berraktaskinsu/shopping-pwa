@@ -18,6 +18,8 @@ https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 https://simplernerd.com/docker-typescript-production/  
 BEST: https://faun.pub/step-by-step-guide-to-dockerize-a-node-js-express-application-cb6be4159cf1  
 OFFICIAL: http://localhost/tutorial/persisting-our-data/  
+FULL: https://mannhowie.com/aws-node  
+
 
 
 

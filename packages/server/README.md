@@ -12,6 +12,12 @@ AWS EC2 Linux: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?ic
 
 Cache Headers: https://regbrain.com/article/cache-headers-express-js
 
+Docker: 
+https://itnext.io/dockerize-a-typescript-app-in-15-mins-a0e8c1e904b3  
+https://nodejs.org/de/docs/guides/nodejs-docker-webapp/  
+https://simplernerd.com/docker-typescript-production/  
+
+
 ## Typescript
 
 Follow [this](https://www.pullrequest.com/blog/intro-to-using-typescript-in-a-nodejs-express-project/) tutorial or the steps below to configure typescript in your Express-Node project.

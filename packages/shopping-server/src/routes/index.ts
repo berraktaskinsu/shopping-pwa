@@ -8,8 +8,11 @@ router.get('/', (req, res) => {
   Book.create(myBook, (err, book) => {
     if (err) res.send('Err');
 
-    res.status(200).send('API works!');
+    // res.status(200).send('API works!');
+    res.status(200).json({ success: true, msg: 'Book Created' });
+    // res.redirect(301, '../login');
+    // res.render('<button>Hey</button>'); NOT WORKING (MUST DEFINE AN ENGINE)
   });
 });
 
-export { router };
+export default router;

@@ -3,7 +3,7 @@ import http from 'http';
 import mongoose from 'mongoose';
 
 import dbConfig from './database/database.config';
-import { router as routes } from './routes/index.route';
+import router from './routes';
 
 import { Book } from './database/models';
 
@@ -13,7 +13,7 @@ const apiRoot = '';
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(apiRoot, routes);
+app.use(apiRoot, router);
 
 mongoose.connect(dbConfig);
 const db = mongoose.connection;

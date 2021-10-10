@@ -16,7 +16,9 @@ Docker:
 https://itnext.io/dockerize-a-typescript-app-in-15-mins-a0e8c1e904b3  
 https://nodejs.org/de/docs/guides/nodejs-docker-webapp/  
 https://simplernerd.com/docker-typescript-production/  
-BEST: https://faun.pub/step-by-step-guide-to-dockerize-a-node-js-express-application-cb6be4159cf1
+BEST: https://faun.pub/step-by-step-guide-to-dockerize-a-node-js-express-application-cb6be4159cf1  
+OFFICIAL: http://localhost/tutorial/persisting-our-data/  
+
 
 
 ## Typescript

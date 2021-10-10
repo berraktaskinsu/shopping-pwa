@@ -9,8 +9,9 @@ router.get('/', (req, res) => {
     if (err) res.send('Err');
 
     // res.status(200).send('API works!');
-    res.status(200).json({ success: true, msg: 'Book Created' });
-    // res.redirect(301, '../login');
+    res.set('Cache-control', `no-store`);
+    res.status(200).json({ success: true, msg: '' });
+    // res.redirect(301, '../signup');
     // res.render('<button>Hey</button>'); NOT WORKING (MUST DEFINE AN ENGINE)
   });
 });

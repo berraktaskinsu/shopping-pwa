@@ -20,6 +20,10 @@ BEST: https://faun.pub/step-by-step-guide-to-dockerize-a-node-js-express-applica
 OFFICIAL: http://localhost/tutorial/persisting-our-data/  
 FULL: https://mannhowie.com/aws-node  
 
+Docker Basics for EC2: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+How to Deploy Node on EC2 without Docker: https://ourcodeworld.com/articles/read/977/how-to-deploy-a-node-js-application-on-aws-ec2-server
+Restart docker on reboot: https://stackoverflow.com/questions/63317771/launch-docker-automatically-when-starting-ec2-server
+Routing traffic from your domain name to your ec2 instance: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-ec2-instance.html
 
 
 

@@ -9,6 +9,30 @@ Follow the below steps or [this](https://ionicframework.com/docs/angular/your-fi
 2. Visual Studio Code
 3. Command Prompt
 
+## _(Optional)_ Create Multi-Root Mono-repo VSCode Workspace
+
+Create your main project directory `my-project` and open the directory on VSCode.
+
+Then, create the folder `.vscode` in the root of your project. Now, save your workspace as `.vscode/myproject.code-workspace`.
+
+Create the folder `packages` at the root of your project. We will store both our server code and app code in this directory, so create the folders `packages/myproject-app` and `myproject-server`.
+
+Let us publish our new project to github. This also initializes our git repository.
+
+Your final project stucture should look like this:
+
+```
+v MYPROJECT
+|--> .git (hidden)
+|
+|--v .vscode
+|  |--> myproject.code-workspace
+|
+|--v packages
+|  |--> myproject.app
+|  |--> myproject.server
+``` 
+
 ## Create Your Ionic-Angular Project
 
 ### Installing global dependencies:

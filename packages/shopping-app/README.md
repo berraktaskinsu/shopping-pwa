@@ -64,16 +64,16 @@ Now copy the following code into `myproject.code-workspace` file.
 			"packages/": true
 		}
 	},
-  "extensions": {
-    "recommendations": [
-        "angular.ng-template",
-        "aaron-bond.better-comments",
-        "dbaeumer.vscode-eslint",
-        "donjayamanne.git-extension-pack",
-        "pkief.material-icon-theme",
-        "esbenp.prettier-vscode"
-    ]
-  }
+	"extensions": {
+		"recommendations": [
+			"angular.ng-template",
+			"aaron-bond.better-comments",
+			"dbaeumer.vscode-eslint",
+			"donjayamanne.git-extension-pack",
+			"pkief.material-icon-theme",
+			"esbenp.prettier-vscode"
+		]
+	}
 }
 ```
 

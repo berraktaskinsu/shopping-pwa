@@ -2,12 +2,12 @@
 
 # Project Setup (Angular & Ionic & Capacitor) (+ Tailwind CSS & Material Design)
 
-### Pre-requisites:
+### 0- Pre-requisites:
 1. NodeJS
 2. Visual Studio Code
 3. Command Prompt
 
-### Create Your Ionic-Angular Project
+### 1- Create Your Ionic-Angular Project
 
 #### Installing global dependencies:
 ```
@@ -45,7 +45,7 @@ ionic serve
 ```
 Open the web-browser and go to `localhost:4200` to see your project.
 
-### Creating a Good Project Structure
+### 2- Creating a Good Project Structure
 
 
 

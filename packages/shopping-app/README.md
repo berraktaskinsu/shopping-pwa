@@ -185,6 +185,7 @@ mkdir src/app/shared/pipes
 mkdir src/app/shared/components/atoms
 mkdir src/app/shared/components/molecules
 ```
+Your final project structure should be as follows:
 
 ```
 v MYPROJECT
@@ -261,9 +262,6 @@ v MYPROJECT
       |--v .vscode
          |-- settings.json
 ```
-
-Create `pages/pages-routing.module.ts`
-Create folder `common`
 
 ## Create Your Ionic-Angular Project
 

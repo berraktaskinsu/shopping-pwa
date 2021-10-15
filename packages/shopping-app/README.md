@@ -131,16 +131,16 @@ Your initial project stucture should look like this:
 ```
 v MYPROJECT
 |--v .vscode
-|  |--> myproject.code-workspace
+|  |-- myproject.code-workspace
 |
 |--v packages
    |--v myproject.app
    |  |--v .vscode
-   |     |--> settings.json
+   |     |-- settings.json
    |  
    |--v myproject.server
       |--v .vscode
-         |--> settings.json
+         |-- settings.json
 ```
 
 Let us publish our new project to github. This also initializes our git repository.

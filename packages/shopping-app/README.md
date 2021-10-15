@@ -162,8 +162,8 @@ v MYPROJECT
 |  |     |--> settings.json
 |  |  
 |  |--v myproject.server
-|     |--v .vscode
-|        |--> settings.json
+|  |  |--v .vscode
+|  |  |  |--> settings.json
 ```
 
 ```
@@ -261,8 +261,8 @@ v MYPROJECT
 |  |  |  |  |  |  |-- index.ts
 |  |
 |  |--v myproject.server
-|     |--v .vscode
-|        |-- settings.json
+|  |  |--v .vscode
+|  |  |  |-- settings.json
 ```
 
 Create `pages/pages-routing.module.ts`

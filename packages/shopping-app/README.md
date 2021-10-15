@@ -2,16 +2,19 @@
 
 # Project Setup (Angular & Ionic & Capacitor) (+ Tailwind CSS & Material Design)
 
-#### Pre-requisites:
+### Pre-requisites:
 1. NodeJS
 2. Visual Studio Code
 3. Command Prompt
+
+### Create Your Ionic-Angular Project
 
 #### Installing global dependencies:
 ```
 npm install -g @ionic/cli native-run cordova-res
 ```
 
+#### Initialize the Ionic-Angular Project:
 Let us start by creating our ionic project. Navigate to the target folder and run the following command to create an empty Ionic-Angular project:
 ```
 ionic start my-first-app blank --type=angular --capacitor
@@ -35,6 +38,16 @@ import { defineCustomElements } from '@ionic/pwa-elements/loader';
 // Call the element loader after the platform has been bootstrapped
 defineCustomElements(window);
 ```
+
+That's it, now you can run your project by typing the following command.
+```
+ionic serve
+```
+Open the web-browser and go to `localhost:4200` to see your project.
+
+### Creating a Good Project Structure
+
+
 
 Follow the below steps or [this](https://ionicframework.com/docs/angular/your-first-app) tutorial to create your project.
 

@@ -34,12 +34,12 @@ Now copy the following code into `myproject.code-workspace` file.
       "path": "../packages/server"
     },
     {
-      "name": "packages/shopping-app",
-      "path": "../packages/shopping-app"
+      "name": "packages/myproject.app",
+      "path": "../packages/myproject.app"
     },
     {
-      "name": "packages/shopping-server",
-      "path": "../packages/shopping-server"
+      "name": "packages/myproject.server",
+      "path": "../packages/myproject.server"
     }
   ],
   "settings": {

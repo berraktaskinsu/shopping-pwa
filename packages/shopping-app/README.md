@@ -15,7 +15,9 @@ Create your main project directory `my-project` and open the directory on VSCode
 
 Then, create the folder `.vscode` in the root of your project. Now, save your workspace as `.vscode/myproject.code-workspace`.
 
-Create the folder `packages` at the root of your project. We will store both our server code and app code in this directory, so create the folders `packages/myproject-app` and `myproject-server`.
+Create the folder `packages` at the root of your project. We will store both our server-side code and client-side code in this directory, so create the folders `packages/myproject-app` and `myproject-server`.
+
+We will then create the two other `.vscode` folders `packages/myproject.app/.vscode` and `packages/myproject.server/.vscode` and add a `settings.json` file in each. Later on, we will use these files to define project-specific settings.
 
 Let us publish our new project to github. This also initializes our git repository.
 
@@ -29,9 +31,51 @@ v MYPROJECT
 |  |--> myproject.code-workspace
 |
 |--v packages
-|  |--> myproject.app
-|  |--> myproject.server
-``` 
+|  |
+|  |--v myproject.app
+|  |  |--v .vscode
+|  |     |--> settings.json
+|  |  
+|  |--v myproject.server
+|     |--v .vscode
+|        |--> settings.json
+```
+
+Now copy the following code into `myproject.code-workspace` file.
+```
+{
+	"folders": [
+		{
+			"name": "ROOT",
+			"path": "../"
+		},
+		{
+			"name": "packages/myproject.app",
+			"path": "../packages/myproject.app"
+		},
+		{
+			"name": "packages/myproject.server",
+			"path": "../packages/myproject.server"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"packages": true,
+			"packages/": true
+		}
+	},
+  "extensions": {
+    "recommendations": [
+        "angular.ng-template",
+        "aaron-bond.better-comments",
+        "dbaeumer.vscode-eslint",
+        "donjayamanne.git-extension-pack",
+        "pkief.material-icon-theme",
+        "esbenp.prettier-vscode"
+    ]
+  }
+}
+```
 
 ## Create Your Ionic-Angular Project
 

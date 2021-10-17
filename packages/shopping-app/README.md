@@ -202,20 +202,11 @@ v MYPROJECT
    |  |--v src
    |     |--v app
    |        |--v common
-   |        |  |--v constants
-   |        |  |  |-- index.ts
-   |        |  |
-   |        |  |--v interfaces
-   |        |  |  |-- index.ts
-   |        |  |
-   |        |  |--v modules
-   |        |  |  |-- index.ts
-   |        |  |
-   |        |  |--v types
-   |        |  |  |-- index.ts
-   |        |  |
-   |        |  |--v utils
-   |        |  |  |-- index.ts
+   |        |  |--> constants
+   |        |  |--> interfaces
+   |        |  |--> modules
+   |        |  |--> types
+   |        |  |--> utils
    |        |
    |        |--v core
    |        |  |--> guards
@@ -224,14 +215,7 @@ v MYPROJECT
    |        |  |-- core.module.ts
    |        | 
    |        |--v pages
-   |        |  |--v home
-   |        |  |  |-- home-routing.module.ts
-   |        |  |  |-- home.module.ts
-   |        |  |  |-- home.page.html
-   |        |  |  |-- home.page.spec
-   |        |  |  |-- home.page.scss
-   |        |  |  |-- home.page.ts
-   |        |  | 
+   |        |  |--> home
    |        |  |-- pages-routing.module.ts
    |        |  |-- pages.component.html
    |        |  |-- pages.component.spec
@@ -241,22 +225,11 @@ v MYPROJECT
    |        |
    |        |--v shared
    |           |--v components
-   |           |  |--v atoms
-   |           |  |  |-- index.ts
-   |           |  |
-   |           |  |--v molecules
-   |           |  |  |-- index.ts
-   |           |  |
-   |           |  |-- index.ts
-   |           |
-   |           |--v directives
-   |           |  |-- index.ts
-   |           |
-   |           |--v modules
-   |           |  |-- index.ts
-   |           |
-   |           |--v pipes
-   |              |-- index.ts
+   |           |  |--> atoms
+   |           |  |--> molecules
+   |           |--> directives
+   |           |--> modules
+   |           |--> pipes
    |
    |--v myproject.server
       |--v .vscode
@@ -303,7 +276,70 @@ Open the web-browser and go to `localhost:4200` to see your project.
 
 ## Creating a Good Project Structure
 
-
+```
+v myproject.app
+|--v .vscode
+|  |-- settings.json
+|  |
+|--v src
+   |--v app
+      |--v common
+      |  |--v constants
+      |  |  |-- index.ts
+      |  |
+      |  |--v interfaces
+      |  |  |-- index.ts
+      |  |
+      |  |--v modules
+      |  |  |-- index.ts
+      |  |
+      |  |--v types
+      |  |  |-- index.ts
+      |  |
+      |  |--v utils
+      |  |  |-- index.ts
+      |
+      |--v core
+      |  |--> guards
+      |  |--> interceptors
+      |  |--> services
+      |  |-- core.module.ts
+      | 
+      |--v pages
+      |  |--v home
+      |  |  |-- home-routing.module.ts
+      |  |  |-- home.module.ts
+      |  |  |-- home.page.html
+      |  |  |-- home.page.spec
+      |  |  |-- home.page.scss
+      |  |  |-- home.page.ts
+      |  | 
+      |  |-- pages-routing.module.ts
+      |  |-- pages.component.html
+      |  |-- pages.component.spec
+      |  |-- pages.component.scss
+      |  |-- pages.component.ts
+      |  |-- pages.module.ts
+      |
+      |--v shared
+         |--v components
+         |  |--v atoms
+         |  |  |-- index.ts
+         |  |
+         |  |--v molecules
+         |  |  |-- index.ts
+         |  |
+         |  |-- index.ts
+         |
+         |--v directives
+         |  |-- index.ts
+         |
+         |--v modules
+         |  |-- index.ts
+         |
+         |--v pipes
+            |-- index.ts
+```
 
 ## Mac OS Environment Setup
 

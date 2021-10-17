@@ -9,6 +9,46 @@ Follow the below steps or [this](https://ionicframework.com/docs/angular/your-fi
 2. Visual Studio Code
 3. Command Prompt
 
+## Create Your Ionic-Angular Project
+
+### Installing global dependencies:
+```
+npm install -g @ionic/cli native-run cordova-res
+```
+
+### Initialize the Ionic-Angular Project:
+Let us start by creating our ionic project. Navigate to the target folder and run the following command to create an empty Ionic-Angular project:
+```
+ionic start my-first-app blank --type=angular --capacitor
+```
+
+Change into the newly created project folder by typing:
+```
+cd my-first-app
+```
+
+### Installing project-specific dependencies:
+```
+npm install @capacitor/camera @capacitor/storage @capacitor/filesystem
+npm install @ionic/pwa-elements
+```
+
+Modify src/main.ts by importing `@ionic/pwa-elements` as follows:
+```
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+
+// Call the element loader after the platform has been bootstrapped
+defineCustomElements(window);
+```
+
+That's it, now you can run your project by typing the following command.
+```
+ionic serve
+```
+Open the web-browser and go to `localhost:4200` to see your project.
+
+## Creating a Good Project Structure
+
 ```
 ng generate module core
 ng generate module shared
@@ -30,8 +70,8 @@ mkdir src/app/shared/pipes
 mkdir src/app/shared/components/atoms
 mkdir src/app/shared/components/molecules
 ```
-Your final project structure should be as follows:
 
+Your final project structure should be as follows:
 ```
 v MYPROJECT
 |--> .git (hidden)
@@ -81,46 +121,7 @@ v MYPROJECT
          |-- settings.json
 ```
 
-## Create Your Ionic-Angular Project
-
-### Installing global dependencies:
-```
-npm install -g @ionic/cli native-run cordova-res
-```
-
-### Initialize the Ionic-Angular Project:
-Let us start by creating our ionic project. Navigate to the target folder and run the following command to create an empty Ionic-Angular project:
-```
-ionic start my-first-app blank --type=angular --capacitor
-```
-
-Change into the newly created project folder by typing:
-```
-cd my-first-app
-```
-
-### Installing project-specific dependencies:
-```
-npm install @capacitor/camera @capacitor/storage @capacitor/filesystem
-npm install @ionic/pwa-elements
-```
-
-Modify src/main.ts by importing `@ionic/pwa-elements` as follows:
-```
-import { defineCustomElements } from '@ionic/pwa-elements/loader';
-
-// Call the element loader after the platform has been bootstrapped
-defineCustomElements(window);
-```
-
-That's it, now you can run your project by typing the following command.
-```
-ionic serve
-```
-Open the web-browser and go to `localhost:4200` to see your project.
-
-## Creating a Good Project Structure
-
+A detailed project structure:
 ```
 v myproject.app
 |--v .vscode

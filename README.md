@@ -2,6 +2,11 @@
 
 Create Multi-Root Mono-Repo in VSCode: https://medium.com/rewrite-tech/visual-studio-code-tips-for-monorepo-development-with-multi-root-workspaces-and-extension-6b69420ecd12
 
+## Authentication
+
+https://www.sitepoint.com/angular-2-authentication-protecting-private-content/
+
+https://www.sitepoint.com/user-authentication-mean-stack/
 
 ## _(Optional)_ Create Multi-Root Mono-repo VSCode Workspace
 
